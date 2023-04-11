@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#middle-container">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+              <li><a href="#booking">Book Online</a></li>
+            </ul>
+          </nav>
+        
+        <div class ="top-container">
+            <img class="top-cloud" src="cloud.png" alt="">
+            <h1>I'm Faisal</h1>
+            <h2>a frontend developer</h2>
+            <img class="bottom-cloud" src="cloud.png" alt="cloud-img">
+            <img src="mountain.png" alt="mountain-img">
+        </div>
+        <section id ="middle-container">
+            <div class="profile">
+              <img src="faisal pic.jpg" alt="faisal picture">
+              <h2>Hello.</h2>
+              <p class="hello">Meet Faisal, a talented and passionate Junior Front End Developer. With a keen eye for design and a deep understanding of modern web technologies, Faisal is dedicated to creating beautiful and functional websites that delight users and meet the needs of clients. Whether working independently or as part of a team, Faisal brings a positive attitude, strong work ethic, and a commitment to excellence to every project. If you're looking for a skilled and motivated developer to bring your web project to life, look no further than Faisal.</p>
+            </div>
+            <hr>
+            <section id="skills">
+                <h2>My Skills.</h2>
+                <div class="skill-row">
+                  <h3>Web Development,Programming Languages</h3>
+                  <p>I am a junior front end developer who loves to make beautiful things.</p>
+                  <canvas id="web-dev-chart"></canvas>
+                </div>
+          
+                  
+              </div>
+
+              <section id="projects">
+                <h2>My Projects</h2>
+                <div class="project">
+                  <h3>TinDog</h3>
+                  <img src="tindog.png" alt="">
+                  <p class="Project-text">TinDog is an online platform where customers can purchase dogs of their choice. The website is designed using HTML and CSS and provides a user-friendly interface for customers to browse through the available dog breeds and make a purchase.</p>
+                  <a href="https://mrjetcool.github.io/Tindog-Project/">View Project</a>
+                </div>
+                <div class="project">
+                  <h3>QR Code Component</h3>
+                  <img src="qr code.png" alt="">
+                  <p class="Project-text">The QR Code Component is a web-based tool that allows users to generate custom QR codes using HTML and CSS. The component is designed to be simple and easy to use, with a user-friendly interface that makes it easy for anyone to create their own QR codes..</p>
+                  <a target="_blank" href="https://mrjetcool.github.io/QR-code-component/">View Project</a>
+                </div>
+                <div class="project">
+                  <h3>Dice Game</h3>
+                  <img src="dice.png" alt="">
+                  <p class="Project-text" >The Dice Game is a web-based game that allows users to roll virtual dice and score points based on the results. The game is designed using HTML, CSS, and JavaScript, and provides a fun and engaging experience for players of all ages.</p>
+                  <a target="_blank" href="https://mrjetcool.github.io/Dice-Game/">View Project</a>
+                </div>
+              </section>
+              <section id="booking">
+                <div class="booking-form">
+                  <h3>Book a Meeting</h3>
+                  <input type="text" id="datepicker" placeholder="Select a date">
+                  <input type="text" id="timepicker" placeholder="Select a time">
+                  <button class="btn" onclick="bookMeeting()">Book Now</button>
+                </div>
+                
+            </section>
+            
+            <section id="contact">
+            <div class="bottom-container">
+              <a class="footer-link" href="https://www.linkedin.com/in/muhammad-faisal-irshad-b40b4911b/">LinkedIn</a>
+              <a class="footer-link" href="https://twitter.com/mrjetcool">Twitter</a>
+              <a class="footer-link" href="https://www.fiverr.com/mrjetcool">fiverr</a>
+              <p class="copyright">© Muhammad Faisal Irshad.</p>
+            </div>
+          </section>
+  
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.css">
+<script src="index.js"></script>
+<body onload="createChart()">
+  ...
+</body>
+
+  </body>
+</html>

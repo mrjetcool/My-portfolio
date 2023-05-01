@@ -97,20 +97,34 @@ a {
 /* Middle section styles */
 #middle-container {
   background-color: white;
-  margin: 100px 0;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.profile {
+  max-width: 800px;
+  padding: 20px;
 }
 
 .profile img {
   border-radius: 100px;
-  width: 10%;
+  width: 20%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.profile h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.hello {
+.profile p {
+  font-size: 1.2rem;
+  line-height: 1.5;
   color: #40514E;
-  line-height: 2;
   margin: 100px auto;
-  text-align: left;
-  width: 40%;
 }
 
 hr {
@@ -120,11 +134,25 @@ hr {
   width: 4%;
 }
 
+#skills {
+  text-align: center;
+  background-color: #eaf6f6;
+}
+
 .skill-row {
-  line-height: 8;
-  margin: 100px auto;
+  max-width: 600px;
+  margin: 50px auto;
   text-align: left;
-  width: 40%;
+}
+
+.skill-row h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.skill-row p {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .web-img {
@@ -186,12 +214,6 @@ a:hover {
     box-sizing: border-box;
   }
   
-
-
-
-
-
-
 .booking-form {
   margin-top: 30px;
 }
@@ -231,12 +253,52 @@ a:hover {
 #timepicker {
   width: 120px;
 }
-#skills{
-  background-color: #eaf6f6;
-}
+
 #projects{
 background-color: #fff;
 }
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  /* Top container */
+  .top-container {
+    padding-top: 80px;
+  }
+
+  .top-cloud {
+    display: none;
+  }
+
+  .bottom-cloud {
+    display: none;
+  }
+
+  /* Navigation */
+  ul {
+    flex-direction: column;
+    height: auto;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  nav a:last-child {
+    border-bottom: none;
+  }
+
+  /* Profile */
+  .profile img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   /* Adjust these styles as necessary */
   body {
@@ -244,6 +306,65 @@ background-color: #fff;
     line-height: 1.4;
     max-width: 100%;
     padding: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #skills {
+    padding: 30px;
+  }
+  
+  .skill-row {
+    text-align: center;
+  }
+  
+  .skill-row h3 {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  
+  .skill-row p {
+    font-size: 16px;
+  }
+  
+  canvas {
+    max-width: 100%;
+  }
+}
+
+/* Styles for even smaller screens */
+@media (max-width: 480px) {
+  #skills {
+    padding: 20px;
+  }
+  
+  .skill-row h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .skill-row p {
+    font-size: 14px;
+  }
+}
+
+/* For screens smaller than 768px (i.e., most mobile devices) */
+@media (max-width: 767px) {
+  .project {
+    margin-bottom: 30px;
+  }
+  
+  .project img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .project .Project-text {
+    width: 80%;
   }
 }
 
